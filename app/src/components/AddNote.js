@@ -18,19 +18,19 @@ const AddNote = ({ handleAddNote }) => {
 	};
 
 	return (
-		<div className='note new'>
+		<div className='text_note_new'>
 			<textarea
 				rows='8'
 				cols='10'
-				placeholder='Type to add a note...'
+				placeholder='Type to add a text note...'
 				value={noteText}
 				onChange={handleChange}
 			></textarea>
-			<div className='note-footer'>
+			<div className='text_note_footer'>
 				<small>
 					{characterLimit - noteText.length} Remaining
 				</small>
-				<button className='save' onClick={handleSaveClick}>
+				<button className='save_button' onClick={handleSaveClick}>
 					Save
 				</button>
 			</div>

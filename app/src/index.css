@@ -12,10 +12,29 @@ code {
 		'Courier New', monospace;
 }
 
-.header {
+.heading {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.text_search {
+	display: flex;
+	align-items: center;
+	background-color: rgb(233, 233, 233);
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 1.5em;
+}
+
+.text_search  input {
+	border: none;
+	background-color: rgb(233, 233, 233);
+	width: 100%;
+}
+
+.text_search  input:focus {
+	outline: none;
 }
 
 .dark-mode {
@@ -36,7 +55,7 @@ code {
 	min-height: 100vh;
 }
 
-.notes-list {
+.text_notes_list {
 	display: grid;
 	grid-gap: 1rem;
 	grid-template-columns: repeat(
@@ -45,7 +64,7 @@ code {
 	);
 }
 
-.note.new {
+.text_note_new {
 	background-color: #4c13e7;
 }
 
@@ -59,20 +78,20 @@ textarea:focus {
 	outline: none;
 }
 
-.save {
+.save_button {
 	background-color: #8bcaee;
 	border: none;
 	border-radius: 15px;
 	padding: 5px 10px 5px 10px;
 }
 
-.save:hover {
+.save_button:hover {
 	background-color: white;
-	color:white;
+	
 	cursor: pointer;
 }
 
-.note {
+.text_note {
 	background-color: #fef68a;
 	border-radius: 10px;
 	padding: 1rem;
@@ -83,17 +102,17 @@ textarea:focus {
 	white-space: pre-wrap;
 }
 
-.note-footer {
+.text_note_footer {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.delete-icon {
+.delete_icon {
 	cursor: pointer;
 }
 
-.search {
+.text_search {
 	display: flex;
 	align-items: center;
 	background-color: rgb(233, 233, 233);
@@ -102,12 +121,12 @@ textarea:focus {
 	margin-bottom: 1.5em;
 }
 
-.search input {
+.text_search input {
 	border: none;
 	background-color: rgb(233, 233, 233);
 	width: 100%;
 }
 
-.search input:focus {
+.text_search  input:focus {
 	outline: none;
 }

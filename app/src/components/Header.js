@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = ({ handleToggleThemeMode }) => {
 	return (
-		<div className='header'>
+		<div className='heading'>
 			<h1>Notes Book</h1>
 			<button
 				onClick={() =>
